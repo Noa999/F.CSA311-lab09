@@ -7,7 +7,6 @@
 1. `npm run start`
 
 If your environment is properly set up, you should get output similar to:
-
 ```
 $ npm run start
 
@@ -35,3 +34,13 @@ Average score for ./images/logo-types-collection.jpg: 0.9283903181552887
 
 ## Async-ify-ing
 Reimplement the Promise version of `main` as an async version (in `mainAsync`). Your version of the code should not use `.then` and it should use `try/catch` instead of `.catch`.
+
+## Why Async/Await is Better Than Promises
+
+Async/await is preferable to Promise chaining for the following reasons:
+
+1. **Readability**: Async/await code reads like normal synchronous code, from top to bottom. Promise chains with `.then()` and `.catch()` can become difficult to follow.
+
+2. **Error handling**: With async/await, we use familiar `try/catch` blocks to handle errors, just like synchronous code. Promise chains require a separate `.catch()` at the end, which can be easy to forget.
+
+3. **Debugging**: Async/await is easier to debug because stack traces are clearer and you can step through the code line by line.
